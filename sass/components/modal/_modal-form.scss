@@ -1,0 +1,209 @@
+.form {
+  &__item {
+    position: relative;
+
+    width: 100%;
+    padding-left: 41px;
+    padding-right: 39px;
+    margin-bottom: 10px;
+
+    &:focus-within .form__icon {
+      fill: $accentColor;
+    }
+  }
+
+  &__item--textarea {
+    padding-left: 41px;
+    padding-right: 39px;
+    margin-bottom: 20px;
+  }
+
+  &__item--checkbox {
+    margin-bottom: 30px;
+    min-height: 24px;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__label {
+    display: block;
+
+    font-family: $mainFontFamily;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    color: $primaryTextColor;
+
+    margin-bottom: 4px;
+  }
+
+  &__label--checkbox {
+    display: flex;
+    align-items: center;
+
+    font-family: $mainFontFamily;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+
+    color: $primaryTextColor;
+  }
+
+  &__imput {
+    display: block;
+
+    width: 448px;
+    min-height: 40px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 42px;
+    padding-right: 16px;
+
+    font-family: $mainFontFamily;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.01em;
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+
+    transition-property: border;
+    transition-duration: $mainDuration;
+    transition-timing-function: $mainTimingFunction;
+
+    &:focus {
+      border: 1px solid $accentColor;
+      outline: none;
+    }
+  }
+  &__imput--textarea {
+    display: block;
+
+    width: 448px;
+    height: 120px;
+    resize: none;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 16px;
+    padding-right: 16px;
+
+    font-family: $mainFontFamily;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.01em;
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+
+    &:focus {
+      border: 1px solid $accentColor;
+      outline: none;
+    }
+  }
+
+  &__input--checkbox {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    &:checked + .form__check-icon {
+      border: transparent;
+      background-color: $accentColor;
+      background-image: url(./../images/check.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-origin: border-box;
+    }
+  }
+
+  &__icon {
+    position: absolute;
+    bottom: 12px;
+    left: 56px;
+
+    fill: rgba(33, 33, 33, 1);
+
+    transition-property: fill;
+    transition-duration: $mainDuration;
+    transition-timing-function: $mainTimingFunction;
+  }
+
+  &__check-icon {
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+    border: 2px solid rgba(33, 33, 33, 1);
+    border-radius: 2px;
+    margin-right: 7px;
+
+    background-color: #ffffff;
+
+    transition-property: background-color, border;
+    transition-duration: $mainDuration;
+    transition-timing-function: $mainTimingFunction;
+  }
+
+  &__rules-link {
+    @extend %link;
+
+    margin-left: 5px;
+
+    font-family: $mainFontFamily;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    text-decoration: underline;
+    color: $accentColor;
+  }
+
+  &__submit {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__submit-btn {
+    @extend %btn;
+
+    width: 200px;
+    height: 50px;
+    background-color: $accentColor;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+
+    font-family: $mainFontFamily;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.06em;
+    text-align: center;
+    color: #ffffff;
+
+    transition-property: background-color;
+    transition-duration: $mainDuration;
+    transition-timing-function: $mainTimingFunction;
+
+    &:hover,
+    &focus {
+      background-color: rgba(24, 140, 232, 1);
+    }
+  }
+}
+
+/*placeholder color*/
+.modal ::-webkit-input-placeholder {
+  color: rgba(117, 117, 117, 0.5);
+}
+.modal :-moz-placeholder {
+  color: rgba(117, 117, 117, 0.5);
+}
+.modal ::-moz-placeholder {
+  color: rgba(117, 117, 117, 0.5);
+}
+.modal :-ms-input-placeholder {
+  color: rgba(117, 117, 117, 0.5);
+}

@@ -1,0 +1,54 @@
+.hero {
+  background-color: #2f303a;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url('./../images/bghero.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  text-align: center;
+  padding-top: 118px;
+  padding-bottom: 118px;
+
+  &__title {
+    font-family: $mainFontFamily;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 42px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #ffffff;
+
+    margin-top: 0;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media screen and(max-width: 767px) {
+      max-width: 360px;
+    }
+  }
+
+  &__btn {
+    @extend %btn;
+
+    background-color: $accentColor;
+
+    font-family: $mainFontFamily;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.06em;
+    text-align: center;
+    color: #ffffff;
+
+    display: inline-block;
+    min-width: 200px;
+    padding: 10px 32px;
+    border-radius: 4px;
+  }
+}
