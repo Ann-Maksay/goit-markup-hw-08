@@ -416,13 +416,13 @@ body {
   overflow: hidden;
 }
 
-.navigation__list, .our-features__list, .team__list, .team__icon-list {
+.navigation__list, .our-features__list, .team__list, .team__icon-list, .clients__list {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.header__logo-link, .footer__logo-link, .navigation__link, .address__link, .form__rules-link, .team__social-link {
+.header__logo-link, .footer__logo-link, .navigation__link, .address__link, .form__rules-link, .team__social-link, .clients__link {
   text-decoration: none;
 }
 
@@ -1195,6 +1195,75 @@ body {
 .team__social-icon {
   width: 20px;
   height: 20px;
+  fill: currentColor;
+}
+
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.clients__title {
+  font-family: "Roboto", sans-serif;
+  color: #212121;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 33px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 30px;
+}
+
+.clients__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.clients__list-item {
+  margin-right: 30px;
+}
+
+@media screen and (max-width: 767px) {
+  .clients__list-item:nth-child(2n + 2) {
+    margin-right: 0;
+  }
+  .clients__list-item:nth-last-child(-n + 2) {
+    margin-bottom: 0;
+  }
+}
+
+.clients__link {
+  width: 170px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #afb1b8;
+  -webkit-transition-property: color, border;
+  transition-property: color, border;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.clients__link:hover, .clients__link:focus {
+  border: 1px solid #2196f3;
+  color: #2196f3;
+}
+
+.clients__icon {
   fill: currentColor;
 }
 
