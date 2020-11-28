@@ -1,0 +1,44 @@
+.address {
+  @media screen and(max-width: 767px) {
+    padding-top: 60px;
+    text-align: center;
+  }
+
+  &__link {
+    @extend %link;
+
+    font-family: $mainFontFamily;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.02em;
+    color: $primaryTextColor;
+
+    display: block;
+    // align-items: center;
+
+    transition-property: color;
+    transition-duration: $mainDuration;
+    transition-timing-function: $mainTimingFunction;
+
+    @media screen and(max-width: 767px) {
+      margin-bottom: 16px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    &:hover,
+    &:focus {
+      color: $accentColor;
+    }
+  }
+
+  &__icon {
+    fill: currentColor;
+    width: 21px;
+    height: 16px;
+    margin-right: 10px;
+  }
+}

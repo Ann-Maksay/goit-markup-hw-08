@@ -1,0 +1,36 @@
+%logo-link {
+  @extend %link;
+
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  color: $accentColor;
+}
+
+.header {
+  &__logo-link {
+    @extend %logo-link;
+
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  &__logo-span {
+    color: $titleTextColor;
+  }
+}
+
+.footer {
+  &__logo-link {
+    @extend %logo-link;
+
+    margin-bottom: 20px;
+    display: inline-block;
+  }
+
+  &__logo-span {
+    color: #ffffff;
+  }
+}

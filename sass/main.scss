@@ -1,0 +1,31 @@
+@import './base/normalize';
+@import './utils/variables';
+
+@import './base/baseStyle';
+@import './utils/basePlaceholders';
+
+/*header*/
+@import './components/logo';
+@import './components/header/navigation';
+@import './components/header/address';
+
+/*hero*/
+@import './components/hero';
+
+/*modal*/
+// @import './components/modal/modal';
+// @import './components/modal/modal-form';
+
+/*section*/
+// @import './components/our-features';
+// @import './components/we-do';
+// @import './components/team';
+// @import './components/clients';
+
+/*footer*/
+
+// @import './components/footer';
+
+/*page2*/
+
+// @import './components/portfolio';
