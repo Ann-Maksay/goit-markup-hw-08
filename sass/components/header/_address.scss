@@ -4,6 +4,12 @@
     text-align: center;
   }
 
+  @media screen and(min-width: 768px) {
+    padding-top: 21px;
+    padding-bottom: 21px;
+    padding-left: 84px;
+  }
+
   &__link {
     @extend %link;
 
@@ -17,6 +23,11 @@
 
     display: block;
     // align-items: center;
+
+    @media screen and(min-width: 768px) {
+      font-size: 14px;
+      line-height: 16px;
+    }
 
     transition-property: color;
     transition-duration: $mainDuration;
@@ -37,8 +48,29 @@
 
   &__icon {
     fill: currentColor;
-    width: 21px;
-    height: 16px;
-    margin-right: 10px;
+  }
+}
+
+.mail .address__icon {
+  width: 21px;
+  height: 16px;
+  margin-right: 10px;
+
+  @media screen and(min-width: 768px) {
+    width: 16px;
+    height: 14px;
+    margin-right: 6px;
+  }
+}
+
+.phone .address__icon {
+  width: 16px;
+  height: 26px;
+  margin-right: 10px;
+
+  @media screen and(min-width: 768px) {
+    width: 15px;
+    height: 15px;
+    margin-right: 3px;
   }
 }

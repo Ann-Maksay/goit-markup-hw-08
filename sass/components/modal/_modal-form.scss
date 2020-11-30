@@ -1,10 +1,26 @@
 .form {
+  padding-left: 40px;
+  padding-right: 40px;
+
+  &__title {
+    font-family: $mainFontFamily;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $titleTextColor;
+
+    padding-bottom: 12px;
+    margin: 0;
+  }
+
   &__item {
     position: relative;
 
     width: 100%;
-    padding-left: 41px;
-    padding-right: 39px;
+    // padding-left: 41px;
+    // padding-right: 39px;
     margin-bottom: 10px;
 
     &:focus-within .form__icon {
@@ -13,8 +29,8 @@
   }
 
   &__item--textarea {
-    padding-left: 41px;
-    padding-right: 39px;
+    // padding-left: 41px;
+    // padding-right: 39px;
     margin-bottom: 20px;
   }
 
@@ -23,6 +39,7 @@
     min-height: 24px;
     display: flex;
     justify-content: center;
+    align-items: center;
   }
 
   &__label {
@@ -44,8 +61,8 @@
 
     font-family: $mainFontFamily;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 12px;
+    line-height: 14px;
     letter-spacing: 0.03em;
 
     color: $primaryTextColor;
@@ -54,7 +71,7 @@
   &__imput {
     display: block;
 
-    width: 448px;
+    width: 100%;
     min-height: 40px;
     padding-top: 12px;
     padding-bottom: 12px;
@@ -82,7 +99,7 @@
   &__imput--textarea {
     display: block;
 
-    width: 448px;
+    width: 100%;
     height: 120px;
     resize: none;
     padding-top: 12px;
@@ -122,8 +139,8 @@
 
   &__icon {
     position: absolute;
-    bottom: 12px;
-    left: 56px;
+    bottom: 11px;
+    left: 12px;
 
     fill: rgba(33, 33, 33, 1);
 
@@ -138,7 +155,7 @@
     height: 15px;
     border: 2px solid rgba(33, 33, 33, 1);
     border-radius: 2px;
-    margin-right: 7px;
+    margin-right: 8px;
 
     background-color: #ffffff;
 
@@ -154,8 +171,8 @@
 
     font-family: $mainFontFamily;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 12px;
+    line-height: 14px;
     letter-spacing: 0.03em;
     text-decoration: underline;
     color: $accentColor;

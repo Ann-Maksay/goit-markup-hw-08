@@ -7,6 +7,7 @@
 }
 
 .navigation {
+  width: 100%;
   display: flex;
   align-items: center;
   @media screen and(max-width: 767px) {
@@ -62,6 +63,11 @@
         display: block;
       }
     }
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      margin-left: 88px;
+    }
   }
 
   &__list {
@@ -80,6 +86,10 @@
     @media screen and(max-width: 767px) {
       margin-bottom: 40px;
     }
+
+    @media screen and(min-width: 768px) {
+      margin-right: 50px;
+    }
   }
   &__item:last-child {
     margin: 0;
@@ -94,8 +104,16 @@
     line-height: 21px;
     letter-spacing: 0.02em;
     color: $titleTextColor;
-
     display: inline-block;
+
+    @media screen and(min-width: 768px) {
+      display: block;
+      font-size: 14px;
+      line-height: 16px;
+
+      padding-top: 32px;
+      padding-bottom: 32px;
+    }
 
     transition-property: color;
     transition-duration: $mainDuration;
