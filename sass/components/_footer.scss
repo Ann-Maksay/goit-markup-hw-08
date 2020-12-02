@@ -124,7 +124,9 @@
 
   &__subscribe-container {
     @media screen and (max-width: 1199px) {
-      margin: auto;
+      margin-left: auto;
+      margin-right: auto;
+      padding-bottom: 60px;
     }
 
     @media screen and (min-width: 1200px) {

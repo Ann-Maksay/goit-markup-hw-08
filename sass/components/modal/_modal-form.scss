@@ -1,6 +1,7 @@
 .form {
   padding-left: 40px;
   padding-right: 40px;
+  padding-bottom: 40px;
 
   &__title {
     font-family: $mainFontFamily;
@@ -172,20 +173,8 @@
   &__rules-link {
     @extend %link;
 
-    margin-left: 5px;
-
-    font-family: $mainFontFamily;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 14px;
-    letter-spacing: 0.03em;
     text-decoration: underline;
     color: $accentColor;
-
-    @media screen and (min-width: 1200px) {
-      font-size: 14px;
-      line-height: 24px;
-    }
   }
 
   &__submit {

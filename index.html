@@ -16,14 +16,14 @@
         <nav class="navigation">
           <a href="./index.html" class="header__logo-link">Web<span class="header__logo-span">Studio</span></a>
 
-          <button type="button" class="navigation__button" aria-expanded="false" data-menu-button>
+          <button type="button" class="navigation__button" aria-expanded="false" aria-controls="nav-menu" data-menu-button>
             <svg width="40px" height="40px" class="navigation__icon" aria-label="Переключатель мобильного меню">
               <use class="icon-line" href="./images/symbol-defs.svg#icon-menu-line"></use>
               <use class="icon-close"href="./images/symbol-defs.svg#icon-menu-close"></use>
             </svg>
           </button>
 
-        <div class="navigation__container" data-menu>
+        <div class="navigation__container" id="nav-menu" data-menu>
           <ul class="navigation__list">
             <li class="navigation__item"><a href="./index.html" class="navigation__link active">Студия</a></li>
             <li class="navigation__item"><a href="./portfolio.html" class="navigation__link">Портфолио</a></li>
@@ -105,9 +105,8 @@
               <label class="form__label--checkbox">
                 <input type="checkbox" name="rules" value="ok" class="form__input--checkbox" required>
                 <span class="form__check-icon"></span>
-                Соглашаюсь с рассылкой и принимаю
+                <p class form__check-text>Соглашаюсь с рассылкой и принимаю <a href="#" class="form__rules-link"> Условия договора</a></p>
               </label>
-              <a href="#" class="form__rules-link"> Условия договора</a>
             </div>
 
             <div class="form__submit">

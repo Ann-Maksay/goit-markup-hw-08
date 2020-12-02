@@ -799,6 +799,20 @@ body {
   }
 }
 
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("./../images/bghero@2.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("./../images/bghero@2.jpg");
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 3), screen and (-webkit-min-device-pixel-ratio: 3), screen and (min-resolution: 3dppx), screen and (min-resolution: 288dpi) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("./../images/bghero@3.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("./../images/bghero@3.jpg");
+  }
+}
+
 .hero__title {
   font-family: "Roboto", sans-serif;
   font-weight: 900;
@@ -967,6 +981,7 @@ body {
 .form {
   padding-left: 40px;
   padding-right: 40px;
+  padding-bottom: 40px;
 }
 
 .form__title {
@@ -1138,21 +1153,8 @@ body {
 }
 
 .form__rules-link {
-  margin-left: 5px;
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 14px;
-  letter-spacing: 0.03em;
   text-decoration: underline;
   color: #2196f3;
-}
-
-@media screen and (min-width: 1200px) {
-  .form__rules-link {
-    font-size: 14px;
-    line-height: 24px;
-  }
 }
 
 .form__submit {
@@ -1795,7 +1797,9 @@ body {
 
 @media screen and (max-width: 1199px) {
   .footer__subscribe-container {
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 60px;
   }
 }
 
