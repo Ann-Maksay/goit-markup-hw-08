@@ -7,7 +7,7 @@
   @media screen and(min-width: 768px) {
     padding-top: 21px;
     padding-bottom: 21px;
-    padding-left: 84px;
+    margin-left: 84px;
   }
 
   &__link {
@@ -25,8 +25,8 @@
     // align-items: center;
 
     @media screen and(min-width: 768px) {
-      font-size: 14px;
-      line-height: 16px;
+      font-size: 12px;
+      line-height: 14px;
     }
 
     transition-property: color;
@@ -35,9 +35,14 @@
 
     @media screen and(max-width: 767px) {
       margin-bottom: 16px;
-      &:last-child {
-        margin-bottom: 0;
-      }
+    }
+
+    @media screen and(max-width: 1200px) {
+      margin-bottom: 10px;
+    }
+
+    &:last-child {
+      margin: 0;
     }
 
     &:hover,
@@ -59,7 +64,7 @@
   @media screen and(min-width: 768px) {
     width: 16px;
     height: 14px;
-    margin-right: 6px;
+    margin-right: 4px;
   }
 }
 

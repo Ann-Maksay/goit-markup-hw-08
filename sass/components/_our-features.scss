@@ -7,6 +7,8 @@
 
     @media screen and(min-width: 768px) {
       display: flex;
+
+      flex-wrap: wrap;
     }
   }
 
@@ -30,6 +32,21 @@
         margin-bottom: 0;
       }
     }
+
+    @media screen and(min-width: 767px) {
+      width: calc((100% - 30px) / 2);
+
+      margin-right: 30px;
+      margin-bottom: 30px;
+
+      &:nth-child(2n + 2) {
+        margin-right: 0;
+      }
+
+      &:nth-last-child(-n + 2) {
+        margin-bottom: 0;
+      }
+    }
   }
 
   &__subtitle {
@@ -41,9 +58,12 @@
     line-height: 16px;
     letter-spacing: 0.03em;
 
-    text-align: center;
     margin-top: 0;
     margin-bottom: 10px;
+
+    @media screen and(max-width: 767px) {
+      text-align: center;
+    }
   }
 
   &__text {
