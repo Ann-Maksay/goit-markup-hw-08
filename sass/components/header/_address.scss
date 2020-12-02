@@ -10,6 +10,12 @@
     margin-left: 84px;
   }
 
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    margin-left: 305px;
+    padding: 0;
+  }
+
   &__link {
     @extend %link;
 
@@ -22,11 +28,17 @@
     color: $primaryTextColor;
 
     display: block;
-    // align-items: center;
 
     @media screen and(min-width: 768px) {
       font-size: 12px;
       line-height: 14px;
+    }
+
+    @media screen and(min-width: 1200px) {
+      font-size: 14px;
+      line-height: 16px;
+      display: flex;
+      align-items: center;
     }
 
     transition-property: color;
@@ -37,8 +49,14 @@
       margin-bottom: 16px;
     }
 
-    @media screen and(max-width: 1200px) {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
       margin-bottom: 10px;
+    }
+
+    @media screen and(min-width: 1200px) {
+      margin-right: 30px;
+      padding-top: 32px;
+      padding-bottom: 32px;
     }
 
     &:last-child {
@@ -64,6 +82,12 @@
   @media screen and(min-width: 768px) {
     width: 16px;
     height: 14px;
+    margin-right: 4px;
+  }
+
+  @media screen and(min-width: 1200px) {
+    width: 21px;
+    height: 16px;
     margin-right: 4px;
   }
 }

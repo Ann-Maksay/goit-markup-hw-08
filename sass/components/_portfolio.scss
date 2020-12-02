@@ -8,9 +8,13 @@
     @extend %list;
 
     display: flex;
-    // justify-content: center;
     flex-wrap: wrap;
     margin-bottom: 25px;
+
+    @media screen and (min-width: 768px) {
+      justify-content: center;
+      margin-bottom: 30px;
+    }
   }
 
   &__filters-item {
@@ -71,7 +75,21 @@
     width: 100%;
     margin-bottom: 30px;
 
-    @media screen and(min-width: 768px) {
+    @media screen and(min-width: 768px) and (max-width: 1199px) {
+      width: calc((100% - 30px) / 2);
+      margin-right: 30px;
+
+      &:nth-child(2n + 2) {
+        margin-right: 0;
+      }
+
+      &:nth-last-child(-n + 2) {
+        margin-bottom: 0;
+      }
+    }
+
+    @media screen and(min-width: 1200px) {
+      width: calc((100% - 30px * 2) / 3);
       margin-right: 30px;
 
       &:nth-child(3n + 3) {

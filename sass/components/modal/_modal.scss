@@ -16,17 +16,33 @@
 
   width: 100%;
   height: 100%;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 92px;
-  background-color: rgba(0, 0, 0, 0.2);
 
-  overflow-y: scroll;
+  background-color: rgba(0, 0, 0, 0.2);
 
   opacity: 1;
   transition-property: opacity;
   transition-duration: $mainDuration;
   transition-timing-function: $mainTimingFunction;
+
+  @media screen and (max-width: 767px) {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 92px;
+  }
+
+  @media screen and (max-width: 1199px) {
+    overflow-y: scroll;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-left: 159px;
+    padding-right: 159px;
+    padding-top: 208px;
+  }
+
+  @media screen and (min-width: 1200) {
+    padding-top: 221px;
+  }
 }
 
 .modal {
@@ -38,8 +54,9 @@
   transform: scale(1);
 
   width: 100%;
-  height: 609px;
+  min-height: 609px;
   padding-top: 8px;
+  margin: auto;
 
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -49,6 +66,15 @@
   transition-property: transform;
   transition-duration: $mainDuration;
   transition-timing-function: $mainTimingFunction;
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+    min-height: 581px;
+  }
 
   &__close {
     &-btn {
