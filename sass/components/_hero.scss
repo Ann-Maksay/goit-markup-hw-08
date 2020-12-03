@@ -5,7 +5,7 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url('./../images/bghero.jpg');
+    url('./../images/bghero-mobile.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -29,20 +29,51 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url('./../images/bghero@2.jpg');
+      url('./../images/bghero-mobile@2x.jpg');
   }
 
-  @media screen and (min-device-pixel-ratio: 3),
-    screen and (-webkit-min-device-pixel-ratio: 3),
-    screen and (-o-min-device-pixel-ratio: 3/1),
-    screen and (min-resolution: 3dppx),
-    screen and (min-resolution: 288dpi) {
+  @media screen and (min-width: 577px) {
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url('./../images/bghero@3.jpg');
+      url('./../images/bghero-tablet.jpg');
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (-webkit-min-device-pixel-ratio: 2),
+      screen and (-o-min-device-pixel-ratio: 2/1),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url('./../images/bghero-tablet@2x.jpg');
+    }
+  }
+
+  @media screen and (min-width: 961px) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url('./../images/bghero.jpg');
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (-webkit-min-device-pixel-ratio: 2),
+      screen and (-o-min-device-pixel-ratio: 2/1),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url('./../images/bghero@2.jpg');
+    }
   }
 
   &__title {

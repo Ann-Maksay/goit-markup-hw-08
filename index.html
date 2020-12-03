@@ -181,7 +181,7 @@
           <li class="we-do__list-item">
             <div class="we-do__container">
               <img 
-              srcset="./images/box1@2.jpg 2x, ./images/box1@3.jpg 3x"
+              srcset="./images/box1@2.jpg 2x"
               src="./images/box1.jpg" 
               alt="Человек печатает" 
               width="370" height="294" 
@@ -193,7 +193,7 @@
           <li class="we-do__list-item">
             <div class="we-do__container">
               <img 
-              srcset="./images/box2@2.jpg 2x, ./images/box2@3.jpg 3x"
+              srcset="./images/box2@2.jpg 2x"
               src="./images/box2.jpg" 
               alt="Человек держит в руках телефон" 
               width="370" 
@@ -206,7 +206,7 @@
           <li class="we-do__list-item">
             <div class="we-do__container">
               <img 
-              srcset="./images/box3@2.jpg 2x, ./images/box3@3.jpg 3x"
+              srcset="./images/box3@2.jpg 2x"
               src="./images/box3.jpg" 
               alt="Человек держит в руках планшет" 
               width="370" 
@@ -226,14 +226,18 @@
         <ul class="team__list">
           <li class="team__list-item--member"> 
             <figure class="team__content-box">
-              <img
-              srcset="./images/product-designer@2.jpg 2x, ./images/product-designer@3.jpg 3x"
+              <picture>
+                <source srcset="./images/productdesigner-mobile.jpg 1x, ./images/productdesigner-mobile@2x.jpg 2x" media="(max-width: 576px)">
+                <source srcset="./images/productdesigner-tablet.jpg 1x, ./images/productdesigner-tablet@2x.jpg 2x" media="(max-width: 960px)">
+                <img
+              srcset="./images/product-designer@2.jpg 2x"
                 src="./images/product-designer.jpg"
                 alt="Мужчина в очках и с бородой"
                 width="270"
                 height="260"
                 class="img"
               />
+              </picture>
               <p class="team__subtitle">Игорь Демьяненко</p>
               <figcaption class="team__desc">Product Designer</figcaption>
             </figure>
@@ -271,14 +275,18 @@
 
           <li class="team__list-item--member">
             <figure class="team__content-box">
-              <img
-              srcset="./images/frontend-developer@2.jpg 2x, ./images/frontend-developer@3.jpg 3x"
-                src="./images/frontend-developer.jpg"
-                alt="Светловолосая женщина в очках"
-                width="270"
-                height="260"
-                class="img"
-              />
+              <picture>
+                <source srcset="./images/frontenddeveloper-mobile.jpg 1x, ./images/frontenddeveloper-mobile@2x.jpg 2x" media="(max-width: 576px)">
+                <source srcset="./images/frontenddeveloper-tablet.jpg 1x, ./images/frontenddeveloper-tablet@2x.jpg 2x" media="(max-width: 960px)">
+                <img
+                srcset="./images/frontend-developer@2.jpg 2x"
+                  src="./images/frontend-developer.jpg"
+                  alt="Светловолосая женщина в очках"
+                  width="270"
+                  height="260"
+                  class="img"
+                />
+              </picture>
               <p class="team__subtitle">Ольга Репина</p>
               <figcaption class="team__desc">Frontend Developer</figcaption>
             </figure>
@@ -316,14 +324,18 @@
 
           <li class="team__list-item--member">
             <figure class="team__content-box">
-              <img
-              srcset="./images/marketing@2.jpg 2x, ./images/marketing@3.jpg 3x"
-                src="./images/marketing.jpg"
-                alt="Мужчина без очков"
-                width="270"
-                height="260"
-                class="img"
-              />
+              <picture>
+                <source srcset="./images/marketing-mobile.jpg 1x, ./images/marketing-mobile@2x.jpg 2x" media="(max-width: 576px)">
+                  <source srcset="./images/marketing-tablet.jpg 1x, ./images/marketing-tablet@2x.jpg 2x" media="(max-width: 960px)">
+                <img
+                srcset="./images/marketing@2.jpg 2x"
+                  src="./images/marketing.jpg"
+                  alt="Мужчина без очков"
+                  width="270"
+                  height="260"
+                  class="img"
+                />
+              </picture>
               <p class="team__subtitle">Николай Тарасов</p>
               <figcaption class="team__desc">Marketing</figcaption>
             </figure>
@@ -361,14 +373,18 @@
 
           <li class="team__list-item--member">
             <figure class="team__content-box">
-              <img
-              srcset="./images/ui-designer@2.jpg 2x, ./images/ui-designer@3.jpg 3x"
-                src="./images/ui-designer.jpg"
-                alt="Ещё один мужчина в очках"
-                width="270"
-                height="260"
-                class="img"
-              />
+              <picture>
+                <source srcset="./images/uidesigner-mobile.jpg 1x, ./images/uidesigner-mobile@2x.jpg 2x" media="(max-width: 576px)">
+                  <source srcset="./images/uidesigner-tablet.jpg 1x, ./images/uidesigner-tablet@2x.jpg 2x" media="(max-width: 960px)">
+                <img
+                srcset="./images/ui-designer@2.jpg 2x"
+                  src="./images/ui-designer.jpg"
+                  alt="Ещё один мужчина в очках"
+                  width="270"
+                  height="260"
+                  class="img"
+                />
+              </picture>
               <p class="team__subtitle">Михаил Ермаков</p>
               <figcaption class="team__desc">UI Designer</figcaption>
             </figure>
